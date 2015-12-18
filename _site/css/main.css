@@ -165,6 +165,7 @@ pre {
 
 .main_image {
   height: 700px;
+  min-width: 520px;
   position: absolute;
   top: 30px;
   -webkit-animation-duration: 0.5s;
@@ -386,6 +387,52 @@ pre {
     opacity: 0; }
   to {
     opacity: 1; } }
+/* Portrait */
+/* Landscape */
+/* ----------- iPad 1 and 2 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait and Landscape */
+@media only screen and (max-width: 1024px) and (min-width: 760px) {
+  .main_image {
+    height: 700px;
+    position: relative;
+    top: 50px;
+    max-width: 500px; }
+
+  .main_text {
+    left: 100px;
+    top: 50px; } }
+@media only screen and (max-width: 760px) and (min-width: 520px) {
+  body {
+    overflow: hidden; }
+
+  .main_image {
+    width: 300px;
+    height: auto;
+    position: relative;
+    top: 100px;
+    min-width: 300px; }
+
+  .main_text {
+    left: 50px;
+    top: 50px; } }
+@media only screen and (max-width: 520px) {
+  body {
+    overflow: hidden; }
+
+  .main_image {
+    height: auto;
+    width: 200px;
+    min-width: 200px;
+    position: relative;
+    top: 50px; }
+
+  .main_text {
+    left: 50px;
+    top: 50px; } }
 /**
  * Syntax highlighting styles
  */
