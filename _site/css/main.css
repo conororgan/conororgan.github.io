@@ -237,7 +237,7 @@ pre {
         .site-nav .page-link:not(:last-child) {
           margin-right: 0; } }
 
-a, a:active {
+a, a:active, a:visited {
   color: #444444;
   padding: 10px; }
 
