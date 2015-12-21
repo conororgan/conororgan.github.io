@@ -126,7 +126,53 @@
     }
 }
 
+a, a:active {
+  color: #444444;
+  padding: 10px;
+}
 
+a:hover {
+  color: #fff;
+  background: #24c89f;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+a:hover > .twitter:before {
+  content: url(../img/twitter_active.png);
+}
+
+ul li {
+  display: inline-block;
+  left: 570px;
+    top: 220px;
+    position: relative;
+    font-size: 14px;
+}
+
+.twitter:before {
+  content: url(../img/twitter_inactive.png);
+  position: relative;
+  top: 5px;
+}
+
+.github:before {
+  content: url(../img/github_inactive.png);
+  position: relative;
+  top: 5px;
+}
+
+.dribbble:before {
+  content: url(../img/dribbble_inactive.png);
+  position: relative;
+  top: 5px;
+}
+
+.email:before {
+  content: url(../img/email_inactive.png);
+  position: relative;
+  top: 6px;
+}
 
 /**
  * Site footer
