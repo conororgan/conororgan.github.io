@@ -12,7 +12,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: 400 16px/1.5 Asap, sans-serif;
-  color: #111;
+  color: #444444;
   background-color: #fcfbfb;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -20,7 +20,7 @@ body {
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -72,7 +72,7 @@ a {
   a:visited {
     color: #1756a9; }
   a:hover {
-    color: #111;
+    color: #444444;
     text-decoration: underline; }
 
 /**
@@ -176,6 +176,15 @@ pre {
   -webkit-animation-name: bounceInLeft;
   animation-name: bounceInLeft; }
 
+h1, h2 {
+  font-weight: 700; }
+
+.arrow {
+  position: absolute;
+  top: 650px;
+  left: 50%;
+  margin-left: -45px; }
+
 .main_text {
   left: 600px;
   top: 200px;
@@ -192,13 +201,38 @@ pre {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn; }
 
+.budget {
+  background: #eceaea;
+  position: absolute;
+  top: 100%;
+  width: 100%; }
+
+.budget_image {
+  height: 530px;
+  position: relative;
+  left: 750px;
+  padding: 100px; }
+
+.budget_text {
+  width: 700px;
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  line-height: 1.5em; }
+
+.budget_text h2 {
+  font-weight: 700;
+  color: #24c89f;
+  font-size: 35px;
+  line-height: 1.5em; }
+
 .site-nav {
   float: right;
   line-height: 56px; }
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    color: #444444;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
@@ -246,9 +280,6 @@ a:hover {
   background: #24c89f;
   border-radius: 3px;
   text-decoration: none; }
-
-a:hover > .twitter:before {
-  content: url(../img/twitter_active.png); }
 
 ul li {
   display: inline-block;
@@ -459,7 +490,13 @@ ul li {
 
   .main_text {
     left: 50px;
-    top: 50px; } }
+    top: 50px; }
+
+  .social {
+    position: relative;
+    top: -570px;
+    left: -550px;
+    display: inline-block; } }
 @media only screen and (max-width: 520px) {
   body {
     overflow: hidden; }
@@ -469,11 +506,18 @@ ul li {
     width: 200px;
     min-width: 200px;
     position: relative;
-    top: 50px; }
+    top: 50px;
+    display: none; }
 
   .main_text {
     left: 50px;
-    top: 50px; } }
+    top: 50px; }
+
+  .social {
+    position: relative;
+    top: -150px;
+    left: -550px;
+    display: inline-block; } }
 /**
  * Syntax highlighting styles
  */

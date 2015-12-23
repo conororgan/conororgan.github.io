@@ -38,6 +38,17 @@
 
 }
 
+h1, h2 {
+  font-weight: 700;
+}
+
+.arrow {
+  position: absolute;
+  top: 650px;
+  left: 50%;
+  margin-left: -45px; 
+}
+
 
 
 .main_text {
@@ -55,6 +66,35 @@
   animation-fill-mode: both;
       -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
+}
+
+.budget {
+  background: #eceaea;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+.budget_image {
+  height: 530px;
+  position: relative;
+  left: 750px;
+  padding: 100px;
+}
+
+.budget_text {
+  width: 700px;
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  line-height: 1.5em;
+}
+
+.budget_text h2 {
+    font-weight: 700;
+    color: #24c89f;
+    font-size: 35px;
+    line-height: 1.5em;
 }
 
 
@@ -138,9 +178,6 @@ a:hover {
   text-decoration: none;
 }
 
-a:hover > .twitter:before {
-  content: url(../img/twitter_active.png);
-}
 
 ul li {
   display: inline-block;
@@ -491,6 +528,13 @@ ul li {
         top: 50px;
     }
 
+      .social {
+        position: relative;
+        top: -570px;
+        left: -550px;
+        display: inline-block;
+      }
+
 
   }
 
@@ -506,12 +550,20 @@ ul li {
         min-width: 200px;
         position: relative;
         top: 50px;
+        display: none;
     }
 
     .main_text {
         left: 50px;
         top: 50px;
     }
+
+    .social {
+      position: relative;
+        top: -150px;
+        left: -550px;
+        display: inline-block;
+      }
 
 
   }
