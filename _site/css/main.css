@@ -212,6 +212,21 @@ h2 {
 .hiddentext p {
   font-size: 14px; }
 
+@media screen and (max-width: 600px) {
+  .content {
+    margin-top: 60px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2; } }
+@media screen and (max-width: 400px) {
+  .content {
+    margin-top: 40px;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1; }
+
+  .thumbnails {
+    margin-bottom: 10px; } }
 /**
  * Syntax highlighting styles
  */

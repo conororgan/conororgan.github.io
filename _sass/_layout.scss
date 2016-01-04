@@ -75,3 +75,23 @@ h2 {
 .hiddentext p {
   font-size: 14px;
 }
+
+@include media-query($on-palm) {
+    .content {
+  margin-top: 60px;
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+}
+}   
+@include media-query($on-phone) {
+    .content {
+  margin-top: 40px;
+  -webkit-column-count: 1;
+     -moz-column-count: 1;
+          column-count: 1;
+}
+.thumbnails {
+  margin-bottom: 10px; 
+}
+}        
