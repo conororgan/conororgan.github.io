@@ -17,7 +17,7 @@
 </head>
 
 
-  <body>
+  <body class="preload">
     <header class="site-header">
 
   <div class="wrapper">
@@ -33,24 +33,53 @@
 
 
     <article class="content wrapper">
-      <div class='thumbnail'>
+      <div class='thumbnail budget'>
         <a href="#">
           <img src="img/budget.png" />
+          <div class="hiddentext">
+            <h2>Budget</h2>
+            <h3>UI  &#8226; Branding</h3>
+            <p>I designed this app after noticing the lack of a easy to use budget app in the Google Play store</p>
+        </div>
         </a>
+      
       </div>
-      <div class='thumbnail'>
+      <div class='thumbnail wallet'>
         <a href="#">
           <img src="img/wallet.png" />
+          <div class="hiddentext">
+            <h2>Wallet</h2>
+            <h3>Logo  &#8226; Packaging  &#8226; Design</h3>
+            <p>As part of college I was tasked with designing a product that was made from flat materials.</p>
+        </div>
         </a>
+
+        
       </div>
-      <div class='thumbnail'>
+      <div class='thumbnail instinct'>
         <a href="#">
           <img src="img/Instinct.png" />
+           <div class="hiddentext">
+            <h2>Instinct</h2>
+            <h3>Logo</h3>
+            <p>I was tasked with designing a logo for my friend's band "Instinct".</p>
+        </div>
         </a>
+
+       
       </div>
     </article>
   </body>
 
-
+<script type="text/javascript">
+  window.addEventListener(
+    'load',
+    function load()
+    {
+        window.removeEventListener('load', load, false);
+        document.body.classList.remove('preload');
+    },
+    false);
+</script>
 </html>
 
