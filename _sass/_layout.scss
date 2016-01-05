@@ -76,6 +76,23 @@ h2 {
   font-size: 14px;
 }
 
+.page-content h1 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.page-content h2 {
+  margin: 40px 0 20px 0;
+  color: #111;
+  font-size: 20px;
+}
+
+.page-content p {
+  font-family: helvetica, sans-serif;
+  width: 900px;
+  margin: 10px auto;
+}
+
 @include media-query($on-palm) {
     .content {
   margin-top: 60px;
