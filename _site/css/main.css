@@ -233,6 +233,12 @@ h2 {
   width: 900px;
   margin: 10px auto; }
 
+footer {
+  text-align: center;
+  color: #CCC9C9;
+  font-size: 12px;
+  font-family: sans-serif; }
+
 .footer_image {
   height: 70px;
   display: block;
