@@ -114,6 +114,20 @@ footer {
   margin: 0 auto;
 }
 
+.right {
+  float: right;
+  position: relative;
+}
+
+.links {
+  top: -60px;
+  a {
+    color: rgba(#000, 0.25);
+  }
+}
+
+
+
 @include media-query($on-palm) {
     .content {
   margin-top: 60px;

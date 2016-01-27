@@ -244,6 +244,15 @@ footer {
   display: block;
   margin: 0 auto; }
 
+.right {
+  float: right;
+  position: relative; }
+
+.links {
+  top: -60px; }
+  .links a {
+    color: rgba(0, 0, 0, 0.25); }
+
 @media screen and (max-width: 800px) {
   .content {
     margin-top: 60px;
