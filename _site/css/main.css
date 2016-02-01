@@ -253,6 +253,12 @@ footer {
   .links a {
     color: rgba(0, 0, 0, 0.25); }
 
+.blog-title {
+  color: #111;
+  text-align: center; }
+  .blog-title span {
+    font-size: 14px; }
+
 @media screen and (max-width: 800px) {
   .content {
     margin-top: 60px;
