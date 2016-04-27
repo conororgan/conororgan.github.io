@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Conor Organ - Cubes, Cubes, Cubes</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/favicons/manifest.json">
+<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="css/making-movies.css">
+  <link href='https://fonts.googleapis.com/css?family=Bitter:400,400italic' rel='stylesheet' type='text/css'>
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  
+</head>
+<body>
+  <header class="site-header">
+
+  <div class="wrapper">
+
+    <a href="/">
+          <h1 class="logo">Conor Organ</h1>
+        </a>
+    <h2>Product Designer</h2>
+    <div class="right links">
+      <a href="/blog">Blog</a>
+    </div>  
+  </div>
+
+</header>
+
+<h1 class="title wrapper">
+    Cubes, Cubes, Cubes
+</h1>
+<h2 class="wrapper">By Conor Organ. 1/2/2016</h2>
+<article class="">
+<div class="wrapper">
+<p>Collaborative work can be fun, especially when you are doing a quick and experimental project. For this CDC class we teamed up with 3rd year Graphic Design students in Limerick School of Art and Design. We were split into groups and told to create an optical illusion!</p>
+
+<p>Designing an Optical Illusion is something that neither class had done before and took some brain power to come up with an idea, as they say two heads are better than one and in this case we had 4! In this case the studio wasn’t the right place to be coming up with an idea so we went for a wander to find a suitable location and to help us come up with ideas.</p>
+
+<p>The Fibonacci Sequence is seen all over nature, even in the way a set of trees are laid out in UL! This might have been artificially done but still was the perfect place for our illusion. We found three trees which were nearly the same distance apart and started taping.</p>
+
+<p>After about an hour we had finished and was time to look around at the other groups. There was a lot of interesting ones like a map of the river Shannon filling a cup if you were standing in a certain place. Another looked like a balloon was flying off into a hole. </p>
+
+<p>The use of the optical illusions really allowed us to look into how 2D and 3D objects can be manipulated and turn into something that seems to be highly unlike what it actually is. Renaissance artists used this technique a lot to create paintings that looked like they had greater space then the actually did. Artists such as Pere Borrell del Caso and Evert Collier are well known examples of this. </p>
+
+<p>Set Design is another region where forced perspective is important. It allows the stage to be set up with gaps so that actors can walk in and out and instructions can be given to them by stage hands. Famous films which have used this technique are the original Charlie and The Chocolate Factory and Indiana Jones and the last Crusade.</p> 
+
+<p>Forced Perspective design is important thing to look at and networking with designers of a different discipline allows us grow as designers as well. </p>
+</div>
+</article>
+
+<footer class="wrapper">
+  <img src="/favicon.jpg" class="footer_image" />
+  <p>Currently in Beta. Bugs likely to happen</p>
+  <p>&copy; 2016 Conor Organ</p>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71998130-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
