@@ -3,77 +3,39 @@
 
   {% include head.html %}
 
-  <body class="preload">
-    {% include header.html %}
+  <body class="preload container">
+    <div class="right portrait">
+      <div class="info">
+        <img src="img/signature.svg" alt="Conor Organ" class="signature"/>
+        <h2>Product Designer</h2>
+        <p>Currently studying Product Design &amp; Technology in the University of Limerick.</p>
+      </div>
+    </div>
+    <div class="left works">
+      <div id="wallet">
+        <div class="top_image">
+          <img src="/img/wallet.png" class="wallet_img"/>
+        </div>
 
-    <article class="content wrapper">
-      <div class='thumbnail budget'>
-        <a href="#">
-          <img src="img/budget.png" />
-          <div class="hiddentext">
-            <h2>Budget</h2>
-            <h3>UI  &#8226; Branding</h3>
-            <p>I designed this app after noticing the lack of a easy to use budget app in the Google Play store</p>
+        <div class="info">
+          <h2>Wallet - The FlatPack Wallet</h2>
+          <p>A leather wallet which is only made from one piece and is small enough to fit into even the smallest of pockets.</p>
+          <a href="/wallet">Learn More</a>
         </div>
-        </a>
-      
       </div>
-      <div class='thumbnail wallet'>
-        <a href="#">
-          <img src="img/wallet.png" />
-          <div class="hiddentext">
-            <h2>Wallet</h2>
-            <h3>Logo  &#8226; Packaging  &#8226; Design</h3>
-            <p>As part of college I was tasked with designing a product that was made from flat materials.</p>
+      <div id="showkase">
+        <div class="top_image">
+          <img src="/img/showkase.png" class="showkase_img"/>
         </div>
-        </a>
 
-        
-      </div>
-      <div class='thumbnail instinct'>
-        <a href="#">
-          <img src="img/Instinct.png" />
-           <div class="hiddentext">
-            <h2>Instinct</h2>
-            <h3>Logo</h3>
-            <p>I was tasked with designing a logo for my friend's band "Instinct".</p>
+        <div class="info">
+          <h2>Showkase - The Creative's Display</h2>
+          <p>A website for designers and other creatives to showcase their latest projects. Designed to work for both small and large projects.  </p>
+          <a href="#">Learn More</a>
         </div>
-        </a>
+      </div>
+    </div>
 
-       
-      </div>
-      <div class='thumbnail chair'>
-        <a href="#">
-          <img src="img/chair.png" />
-           <div class="hiddentext">
-            <h2>Festival Chair</h2>
-            <h3>Design</h3>
-            <p>As part of college I was asked to make a festival chair out of 2 1x1m pieces of cardboard</p>
-        </div>
-        </a>
-      </div>
-
-      <div class='thumbnail style'>
-        <a href="#">
-          <img src="img/style.png" />
-           <div class="hiddentext">
-            <h2>Style</h2>
-            <h3>Design</h3>
-            <p>As part of college I was asked to make a light in the style of a famous Industrial Designer</p>
-        </div>
-        </a>
-      </div>
-      <div class='thumbnail kitchen'>
-        <a href="#">
-          <img src="img/kit.jpg" />
-           <div class="hiddentext">
-            <h2>Kitchen</h2>
-            <h3>Design</h3>
-            <p>As part of college I was asked to design a kitchen fit for the modern student life.</p>
-        </div>
-        </a>
-      </div>
-    </article>
 
     {% include footer.html %}
   </body>
@@ -88,7 +50,15 @@
     },
     false);
 </script>
-
+<script   src="https://code.jquery.com/jquery-3.0.0.slim.min.js"   integrity="sha256-Rf4BadfyCtsvHmO89BUZcbYvNNvZvOT08ALfEzvCsD0="   crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".works").slick({
+      dots: true
+    });
+  });
+</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

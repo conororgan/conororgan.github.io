@@ -27,9 +27,9 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
-
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
   <link rel="stylesheet" href="/css/main.css">
-  <link href='https://fonts.googleapis.com/css?family=Bitter:400,400italic' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Lora|Nunito:300,400" rel="stylesheet">
   <link rel="canonical" href="http://conororgan.me/wallet/">
   <link rel="alternate" type="application/rss+xml" title="Conor Organ" href="http://conororgan.me/feed.xml">
   
@@ -39,38 +39,183 @@
   <body>
 
     <header class="site-header">
-
-  <div class="wrapper">
-
-    <a href="/">
-          <h1 class="logo">Conor Organ</h1>
-        </a>
-    <h2>Product Designer</h2>
-    <div class="right links">
-      <a href="/blog">Blog</a>
-    </div>  
-  </div>
+	<a href="/"><img src="/img/signature.svg" class="project_sig" /></a>
 
 </header>
 
 
-    <div class="page-content">
-      <div class="wrapper">
-        <iframe src="Conor_Organ_flat_mates.pdf" class="pdf" allowfullscreen></iframe>
+        <div class="title wallet">
+	<h1>Wallet - The FlatPack Wallet</h1>
+</div>
 
-<script language="javascript" type="text/javascript">
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-  }
-</script>
-      </div>
-    </div>
+<div class="page_content">
+	<div class="wrapper">
+		<h2>Introduction</h2>
+		<p>Wallet is a project that was given to me as part of my college course. The basis of the project was to design the functional object and packaging. The product could not be bigger than 50cm x 50cm x 50cm. The project required us to pick one of 5 themes:</p>
+		<ul>
+			<li>Travel</li>
+			<li>Play</li>
+			<li>Leisure</li>
+			<li>Learn</li>
+			<li>Work</li>
+		</ul>
 
-    <footer class="wrapper">
-  <img src="/favicon.jpg" class="footer_image" />
-  <p>Currently in Beta. Bugs likely to happen</p>
-  <p>&copy; 2016 Conor Organ</p>
-</footer>
+		<p>The product must be built by the user and therefore be easy to put together and have simple instructions to accompany the packaging.</p>
+
+		<p>The objectives for the project were:</p>
+		<ul>
+			<li>Research an open-ended theme</li>
+			<li>Explore materials and production methods</li>
+			<li>Plan, specify and produce finished products</li>
+			<li>Apply graphic design principles for effective visual communication</li>
+			<li>Application of high level design skills</li>
+		</ul>
+
+		<h2>Discover</h2>
+		<p>The first part of the project was the discovery. This is were I fleshed out ideas to find an area that needs attention. This can be done in several ways the first step was a brainstorm.</p>
+
+		<h3>Brainstorm</h3>
+
+		<p>During this phase the themes were seperated out and split up so that different areas could be looked at.</p>
+
+		<h4>Travel</h4>
+		<table>
+			<thead>
+				<tr>
+					<th></th>
+					<th>Boat/Ferry</th>
+					<th>Bus/Taxi</th>
+					<th>Cycling</th>
+					<th>Walking</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Luggage</th>
+					<td>&#x2713;</td>
+					<td>&#x2713;</td>
+					<td>&#x2713;</td>
+					<td>&#x2713;</td>
+				</tr>
+				<tr>
+					<th>Hands-free</th>
+					<td></td>
+					<td>&#x2713;</td>
+					<td>&#x2713;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Comfort</th>
+					<td>&#x2713;</td>
+					<td>&#x2713;</td>
+					<td>&#x2713;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Food</th>
+					<td>&#x2713;</td>
+					<td>&#x2713;</td>
+					<td></td>
+					<td>&#x2713;</td>
+				</tr>
+				<tr>
+					<th>Weather</th>
+					<td></td>
+					<td></td>
+					<td>&#x2713;</td>
+					<td>&#x2713;</td>
+				</tr>
+				<tr>
+					<th>Leasure</th>
+					<td>&#x2713;</td>
+					<td>&#x2713;</td>
+					<td>&#x2713;</td>
+					<td>&#x2713;</td>
+				</tr>
+				<tr>
+					<th>Children</th>
+					<td>&#x2713;</td>
+					<td>&#x2713;</td>
+					<td>&#x2713;</td>
+					<td>&#x2713;</td>
+				</tr>
+			</tbody>
+		</table>
+		<figure>Table 1.1: Shows which different sections falls under certain categories</figure>
+
+		<h4>Work</h4>
+		<img src="/wallet/img/work.jpg" />
+		<figure>Image 1.1: Different Jobs and areas where ideas can be generated</figure>
+
+		<h4>Leisure</h4>
+		<img src="/wallet/img/leisure.jpg" />
+		<figure>Image 1.1: Different leisure activities and areas where ideas can be generated</figure>
+
+		<h4>Play</h4>
+		<img src="/wallet/img/play.jpg" />
+		<figure>Image 1.1: Different play activities and areas where ideas can be generated</figure>
+
+		<h3>Materials</h3>
+		<p>The next stage of the process was to look at the different materials that can be laser cut. The laser cutter was the main manufacturing technique that was used for this project.</p>
+
+		<h4>ABS</h4>
+		<p>ABS or acrylonitrile butadiene styrene is a thermoplastic polymer. It is impact resistant and tough. Heating up gives off poisonous gases. It has a wide range of uses from Lego bricks to keyboard keycaps. Is not used very often for laser cutting.</p>
+
+		<h4>Acrylic</h4>
+		<p>Acrylic is a thermoplastic polymer. It is a stiff, fragile material comparable to glass. It retains laser cutting well and engraves well. Available in multiple colours. Cheapest plastic to laser cut.</p>
+
+		<h4>Leather</h4>
+		<p>Leather is a durable, flexible material created by tanning animal hide. It can tanned in a lot of different ways. These leave the leather with different properties. The most popular being chrome-tanned leather. It has a lot of different uses including shoes, hats, jackets, skirts, trousers and belts.</p>
+
+		<h4>Laminate</h4>
+		<p>Laminate is when several layers of a material are joined together to form a typically stronger material and other properties. Laminate materials can be anything from wood to plastic. There are a lot of uses for laminate including car windshields, flooring and paper.</p>
+
+		<h3>Discover - Wallet</h3>
+		<p>After looking at all these different areas that I could go into designing a wallet. I did this for a number of reasons.</p>
+		<ul>
+			<li>Damaged Cards from wallet being too tight and not being designed properly</li>
+			<li>Wallets being too big to fit in and out of pockets with ease. Especially skinny jeans.</li>
+		</ul>
+		<p>To design the wallet properly I looked at what is a wallet in a vaccum.</p>
+
+		<h4>What makes a wallet a wallet?</h4>
+		<p>The definition of a wallet is a pocket-sized folder for money and plastic cards. This can be done in multiple different materials from synthetic leather to real leather on to wood and acrylic. This definition allows for a bit of play with the design of a wallet. The description of the wallet as a “folder” is a loose one. Wallets come in all different shapes and sizes. </p>
+
+		<h4>What are some recent advancements in wallets?</h4>
+		<p>An important technology that is in current wallets is RFID blocking or Radio-Frequency Identification Blocking. RFID is the wireless use of electromagnetic fields to transfer data for the purpose of automatically identifying and tracking tags attached to objects. This is used in modern credit cards. Modern credit cards use this technology to charge a card when the card is placed on the right spot.</p>
+
+		<p>Wallets can block these signals so that hackers can not use their phones to steal data off these cards, passports and other important cards.</p>
+
+		<h4>How do you avoid demagnetising credit cards?</h4>
+		<p>Avoiding demagnetising is important when using anything with a magnetic strip. This occurs when the black stripe on the back of the card becomes corrupted. This black stripe on the back of the cards is a magnetic strip. This strip is filled with data, which is arranged as magnetic particles and the basic properties of a magnetic mean these particles could get rearranged simply by being near a magnet.</p>
+
+		<h3>Define</h3>
+		<p>Defineing the style of product is an important step in any project, this process included creating mood boards.</p>
+
+		<h4>Mood Boards</h4>
+		<img src="/wallet/img/mood1.jpg" />
+		<img src="/wallet/img/mood2.jpg" />
+
+		<h3>Ideation</h3>
+		<p>Ideation started with looking at different forms of wallets and different locking mechanisms that could be used to combine different layers of materials.</p>
+
+		<p>The forms were explored in a number of different ways including holding card in place and displaying cards so it is easy to remove cards. A folder like wallet was also explored.</p>
+
+		<img src="/wallet/img/ideation1.jpg" />
+		<img src="/wallet/img/ideation2.jpg" />
+		<img src="/wallet/img/ideation3.jpg" />
+		<img src="/wallet/img/ideation4.jpg" />
+
+		<h3>Concept Development</h3>
+
+	</div>
+
+</div>
+
+    
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -11,7 +11,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 Bitter, sans-serif;
+  font: 400 16px/1.5 Lora, serif;
   color: #444444;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
@@ -145,135 +145,151 @@ pre {
   .icon > svg path {
     fill: #828282; }
 
-.preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important; }
-
-.site-header {
-  margin-top: 60px; }
-
-h2 {
-  font-size: 14px;
-  color: #778dbe;
-  font-style: italic;
-  margin-top: -15px; }
-
-.logo {
-  width: 200px;
-  padding: 50px 0 0 0;
-  height: 0;
-  background: url("/img/Logo.png") no-repeat;
-  background-size: contain;
-  overflow: hidden; }
-
-.content {
-  margin-top: 60px;
-  margin-bottom: 60px;
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3; }
-
-.thumbnail {
-  position: relative;
-  border-bottom: 20px solid transparent;
-  -webkit-column-break-inside: avoid; }
-
-.thumbnail:hover .hiddentext {
-  opacity: 1;
-  -webkit-transition: opacity .5s;
-  /* Safari */
-  transition: opacity .5s; }
-
-.hiddentext {
-  background: rgba(255, 255, 255, 0.9);
-  height: 101%;
+.container {
   width: 100%;
-  position: absolute;
-  top: 0px;
-  color: #111;
-  padding: 20px;
-  box-sizing: border-box;
-  opacity: 0;
-  text-align: center;
-  -webkit-transition: opacity 1s;
-  /* Safari */
-  transition: opacity 1s; }
-
-.hiddentext h2 {
-  color: #111;
-  font-size: 18px;
-  margin-top: 30px; }
-
-.hiddentext h3 {
-  font-size: 12px;
-  margin-top: -10px;
-  text-align: center;
-  color: rgba(17, 17, 17, 0.75); }
-
-.pdf {
-  width: 100%;
-  height: 760px; }
-
-.hiddentext p {
-  font-size: 14px; }
-
-.page-content h1 {
-  margin: 20px 0;
-  text-align: center; }
-
-.page-content h2 {
-  margin: 40px 0 20px 0;
-  color: #111;
-  font-size: 20px; }
-
-.page-content p {
-  font-family: helvetica, sans-serif;
-  width: 900px;
-  margin: 10px auto; }
-
-footer {
-  text-align: center;
-  color: #CCC9C9;
-  font-size: 12px;
-  font-family: sans-serif; }
-
-.footer_image {
-  height: 70px;
-  display: block;
-  margin: 0 auto; }
+  height: 100vh; }
 
 .right {
-  float: right;
+  float: right; }
+
+.left {
+  float: left; }
+
+h4 {
+  font-weight: 700; }
+
+.portrait {
+  background: url("/img/Bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 50%;
   position: relative; }
+  .portrait .info {
+    position: absolute;
+    bottom: 100px;
+    width: 100%; }
+    .portrait .info img {
+      margin: 0 auto;
+      text-align: center;
+      display: block; }
+    .portrait .info h2 {
+      font-family: "Nunito", sans-serif;
+      color: #bd6e40;
+      font-size: 18px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 300; }
+    .portrait .info p {
+      color: #f7f0ed;
+      font-size: 18px;
+      width: 70%;
+      margin: 0 auto; }
 
-.links {
-  top: -60px; }
-  .links a {
-    color: rgba(0, 0, 0, 0.25); }
+.signature {
+  width: 250px; }
 
-.blog-title {
-  color: #111;
-  text-align: center; }
-  .blog-title span {
-    font-size: 14px; }
+.works {
+  margin: 0 auto;
+  width: 50%; }
 
-@media screen and (max-width: 800px) {
-  .content {
-    margin-top: 60px;
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2; } }
-@media screen and (max-width: 400px) {
-  .content {
-    margin-top: 40px;
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1; }
+.slick-arrow {
+  display: none !important; }
 
-  .thumbnails {
-    margin-bottom: 10px; } }
+.slick-dots {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  display: block; }
+
+.slick-dots li {
+  display: inline-block;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  background: lightgrey;
+  margin: 2px; }
+
+li.slick-active {
+  background: darkgrey; }
+
+.slick-dots button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  color: transparent;
+  border: none; }
+
+#showkase_img {
+  padding-right: 20px; }
+
+#wallet, #showkase {
+  position: relative;
+  overflow: hidden; }
+  #wallet img, #showkase img {
+    display: block;
+    margin: 40px auto 20px auto; }
+  #wallet .info, #showkase .info {
+    width: 75%;
+    margin: 40px auto; }
+    #wallet .info h2, #showkase .info h2 {
+      font: 24px/1.5em "Nunito", sans-serif;
+      text-transform: uppercase; }
+    #wallet .info p, #showkase .info p {
+      font-size: 18px;
+      margin-bottom: 40px; }
+    #wallet .info a, #showkase .info a {
+      color: #bd6e40;
+      font: 18px/1.5em "Nunito", sans-serif;
+      text-transform: uppercase;
+      text-decoration: underline;
+      text-align: center; }
+
+header {
+  width: 960px;
+  margin: 10px auto; }
+
+.project_sig {
+  width: 200px; }
+
+.title {
+  position: relative;
+  padding-top: 150px;
+  height: 100vh;
+  top: -130px;
+  z-index: -1;
+  text-align: center;
+  color: #efefef;
+  font: 24px/1.5em "Nunito", sans-serif; }
+  .title h1 {
+    background: rgba(0, 0, 0, 0.5);
+    width: 960px;
+    padding: 20px 0;
+    margin: 0 auto; }
+
+.title.wallet {
+  background: url("/wallet/img/wallet_main.jpg") center top no-repeat; }
+
+.page_content {
+  background: #fefefe;
+  padding-top: 40px;
+  width: 100%;
+  position: relative;
+  top: -50vh; }
+  .page_content table {
+    border: 1px solid #444;
+    border-collapse: collapse;
+    font-family: "Nunito", sans-serif; }
+    .page_content table tr, .page_content table th {
+      border: 1px solid #444; }
+    .page_content table td {
+      width: 100px;
+      text-align: center; }
+    .page_content table th {
+      padding: 5px;
+      background: lightgrey; }
+
 /**
  * Syntax highlighting styles
  */
