@@ -290,6 +290,22 @@ header {
       padding: 5px;
       background: lightgrey; }
 
+@media screen and (max-width: 800px) {
+  .right {
+    float: none; }
+
+  .left {
+    float: none; }
+
+  .portrait {
+    width: 100%; }
+
+  .works {
+    width: 100%; }
+
+  .title h1 {
+    width: 100%;
+    line-height: 1.5em; } }
 /**
  * Syntax highlighting styles
  */
