@@ -9,9 +9,11 @@
 
     <div id="success">
       <div id="one">
+
         <div id="albumPic" class="left"></div>
         <div class="right">
           <div id="songName"></div>
+          <img src="assets/img/play.gif" class="play" />
           <div id="artistName"></div>
           <div id="albumName"></div>
         </div>
@@ -62,6 +64,9 @@
           $('#three #artistName').html(data.recenttracks.track[2].artist['#text']);
           $('#three #songName').html(data.recenttracks.track[2].name);
           $('#three #albumName').html(data.recenttracks.track[2].album['#text']);
+          if(data.recenttracks.track[0]['@attr'].nowplaying== "true") {
+            $('.play').css("display", "inline-block");
+          }
       },
       error : function(code, message){
           $('#error').html('Error Code: ' + code + ', Error Message: ' + message);
