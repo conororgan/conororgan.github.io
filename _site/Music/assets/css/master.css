@@ -1,0 +1,89 @@
+body {
+  font: 24px/1.5em sans-serif;
+  color: #fff;
+}
+
+.right {
+  float: right;
+  width: 300px;
+  margin-top: 40px;
+}
+
+.left {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+#one {
+  padding-top: 40px;
+}
+
+#two {
+  padding-top: 20px;
+}
+
+#two #albumPic img {
+  height: 200px;
+  width: 200px;
+  margin-left: 50px;
+}
+
+#two #songName {
+  font-size: 18px;
+}
+
+#two #artistName, #two #albumName {
+  font-size: 16px;
+}
+
+#three {
+  padding-top: 10px;
+}
+
+#three .right {
+  margin-top: 10px;
+}
+
+#three #albumPic img {
+  height: 100px;
+  width: 100px;
+  margin-left: 100px;
+}
+
+#three #songName {
+  font-size: 16px;
+}
+
+#three #artistName, #three #albumName {
+  font-size: 12px;
+}
+
+#success {
+  width: 700px;
+  margin: 0 auto;
+  z-index: 2;
+  display: block;
+}
+
+#artistName, #albumName {
+  color: rgba(255,255,255, 0.75);
+  font-size: 18px;
+  line-height: 1.4em;
+}
+
+.background {
+  background-size: cover;
+ display: block;
+ filter: blur(10px) brightness(50%);
+ -webkit-filter: blur(10px) brightness(50%);
+
+ height: 800px;
+ left: -40px;
+ position: fixed;
+ right: -40px;
+ top: -40px;
+ z-index: -10;
+}

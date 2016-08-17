@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Conor Organ's Listening Habits</title>
+    <link rel="stylesheet" href="assets/css/master.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+
+    <div id="success">
+      <div id="one">
+        <div id="albumPic" class="left"></div>
+        <div class="right">
+          <div id="songName"></div>
+          <div id="artistName"></div>
+          <div id="albumName"></div>
+        </div>
+      </div>
+      <br class="clear" />
+      <div id="two">
+        <div id="albumPic" class="left"></div>
+        <div class="right">
+          <div id="songName"></div>
+          <div id="artistName"></div>
+          <div id="albumName"></div>
+        </div>
+      </div>
+      <br class="clear" />
+      <div id="three">
+        <div id="albumPic" class="left"></div>
+        <div class="right">
+          <div id="songName"></div>
+          <div id="artistName"></div>
+          <div id="albumName"></div>
+        </div>
+      </div>
+    </div>
+    <div id="error"></div>
+    <div class="background"></div>
+  </body>
+<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  $.ajax({
+      type : 'POST',
+      url : 'http://ws.audioscrobbler.com/2.0/',
+      data : 'method=user.getrecenttracks&' +
+             'user=whyelse&' +
+             'api_key=ee5696757919d38bc8660c1d101b60e2&' +
+             'format=json',
+      dataType : 'jsonp',
+      success : function(data) {
+          $('.background').css("background-image", 'url(' + data.recenttracks.track[0].image[3]['#text']+ ')');
+          $('#one #albumPic').html("<img src='" + data.recenttracks.track[0].image[3]['#text'] + "' />");
+          $('#one #artistName').html(data.recenttracks.track[0].artist['#text']);
+          $('#one #songName').html(data.recenttracks.track[0].name);
+          $('#one #albumName').html(data.recenttracks.track[0].album['#text']);
+          $('#two #albumPic').html("<img src='" + data.recenttracks.track[1].image[3]['#text'] + "' />");
+          $('#two #artistName').html(data.recenttracks.track[1].artist['#text']);
+          $('#two #songName').html(data.recenttracks.track[1].name);
+          $('#two #albumName').html(data.recenttracks.track[1].album['#text']);
+          $('#three #albumPic').html("<img src='" + data.recenttracks.track[2].image[3]['#text'] + "' />");
+          $('#three #artistName').html(data.recenttracks.track[2].artist['#text']);
+          $('#three #songName').html(data.recenttracks.track[2].name);
+          $('#three #albumName').html(data.recenttracks.track[2].album['#text']);
+      },
+      error : function(code, message){
+          $('#error').html('Error Code: ' + code + ', Error Message: ' + message);
+      }
+  });
+  </script>
+</html>
