@@ -81,15 +81,24 @@ body {
 
 .background {
   background-size: cover;
+  background-position: center;
  display: block;
  filter: blur(10px) brightness(50%);
  -webkit-filter: blur(10px) brightness(50%);
 
- height: 800px;
- left: -40px;
- position: fixed;
- right: -40px;
- top: -40px;
+ /* Set rules to fill background */
+   min-height: 130%;
+   min-width: 1024px;
+
+   /* Set up proportionate scaling */
+   width: 130%;
+   height: auto;
+
+   /* Set up positioning */
+   position: fixed;
+   top: -100px;
+   left: -100px;
+
  z-index: -10;
 }
 
