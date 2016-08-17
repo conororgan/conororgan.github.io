@@ -290,6 +290,14 @@ header {
       padding: 5px;
       background: lightgrey; }
 
+.page_content .wrapper img {
+  margin: 0 auto;
+  display: block;
+  margin: 5px 0; }
+
+.page_content h2, h4 {
+  margin-top: 10px; }
+
 @media screen and (max-width: 800px) {
   .right {
     float: none; }
