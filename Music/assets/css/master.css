@@ -88,7 +88,7 @@ body {
 
  /* Set rules to fill background */
    min-height: 130%;
-   min-width: 1024px;
+   min-width: 130%;
 
    /* Set up proportionate scaling */
    width: 130%;
@@ -107,4 +107,34 @@ body {
   opacity: .75;
   height: 25px;
   width: 25px;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+      height: 100%;
+    }
+
+    #success {
+      text-align: center;
+      width: auto;
+    }
+
+    .right {
+      float: none;
+      width: 100%;
+    }
+    .left {
+      float: none;
+    }
+
+    #albumPic img, #two #albumPic img, #three #albumPic img {
+      margin: 0 auto;
+      display: block;
+    }
+
+    #three {
+      margin-bottom: 40px;
+    }
+
+
 }
