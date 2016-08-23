@@ -271,6 +271,10 @@ header {
 .title.wallet {
   background: url("/wallet/img/wallet_main.jpg") center top no-repeat; }
 
+.title.showkase {
+  background: url("/showkase/img/header.png") center top no-repeat;
+  background-size: contain; }
+
 .page_content {
   background: #fefefe;
   padding-top: 40px;
@@ -291,12 +295,34 @@ header {
       background: lightgrey; }
 
 .page_content .wrapper img {
-  margin: 0 auto;
   display: block;
-  margin: 5px 0; }
+  margin: 5px auto; }
 
 .page_content h2, h4 {
   margin-top: 10px; }
+
+.compare {
+  margin: 0 auto; }
+
+.compare figure {
+  width: 49%;
+  display: inline-block !important;
+  margin-top: 10px;
+  vertical-align: top; }
+
+.compare img {
+  max-height: 400px;
+  margin: 0 auto;
+  text-align: center; }
+
+.compare figure figcaption {
+  margin-top: 10px; }
+
+.compare figure:hover {
+  width: 100%; }
+
+.compare figure:hover img {
+  max-height: 600px; }
 
 @media screen and (max-width: 800px) {
   .right {
