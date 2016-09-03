@@ -224,22 +224,22 @@ li.slick-active {
 #showkase_img {
   padding-right: 20px; }
 
-#wallet, #showkase {
+#wallet, #showkase, #barrier, #travel {
   position: relative;
   overflow: hidden; }
-  #wallet img, #showkase img {
+  #wallet img, #showkase img, #barrier img, #travel img {
     display: block;
     margin: 40px auto 20px auto; }
-  #wallet .info, #showkase .info {
+  #wallet .info, #showkase .info, #barrier .info, #travel .info {
     width: 75%;
     margin: 40px auto; }
-    #wallet .info h2, #showkase .info h2 {
+    #wallet .info h2, #showkase .info h2, #barrier .info h2, #travel .info h2 {
       font: 24px/1.5em "Nunito", sans-serif;
       text-transform: uppercase; }
-    #wallet .info p, #showkase .info p {
+    #wallet .info p, #showkase .info p, #barrier .info p, #travel .info p {
       font-size: 18px;
       margin-bottom: 40px; }
-    #wallet .info a, #showkase .info a {
+    #wallet .info a, #showkase .info a, #barrier .info a, #travel .info a {
       color: #bd6e40;
       font: 18px/1.5em "Nunito", sans-serif;
       text-transform: uppercase;
@@ -275,6 +275,14 @@ header {
   background: url("/showkase/img/header.png") center top no-repeat;
   background-size: contain; }
 
+.title.barrier {
+  background: url("/barrier/img/sketch-13.jpg") center top no-repeat;
+  background-size: contain; }
+
+.title.smartertravel {
+  background: url("/smartertravel/img/header.png") center top no-repeat;
+  background-size: cover; }
+
 .page_content {
   background: #fefefe;
   padding-top: 40px;
@@ -293,6 +301,11 @@ header {
     .page_content table th {
       padding: 5px;
       background: lightgrey; }
+  .page_content video {
+    width: 960px;
+    object-fit: scale-down;
+    display: block;
+    margin: 0 auto; }
 
 .page_content .wrapper img {
   display: block;
@@ -304,7 +317,7 @@ header {
 .compare {
   margin: 0 auto; }
 
-.compare figure {
+.compare figure, .compare article {
   width: 49%;
   display: inline-block !important;
   margin-top: 10px;
@@ -323,6 +336,122 @@ header {
 
 .compare figure:hover img {
   max-height: 600px; }
+
+.recorded, .obprne {
+  width: 960px; }
+
+.unknowns li {
+  list-style: none; }
+
+.third img {
+  display: inline-block !important;
+  width: 33%; }
+
+/* http://prismjs.com/download.html?themes=prism-okaidia&languages=clike+c+csharp+cpp */
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  box-sizing: border-box;
+  color: #f8f8f2;
+  background: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  width: 960px;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em; }
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #272822; }
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal; }
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray; }
+
+.token.punctuation {
+  color: #f8f8f2; }
+
+.namespace {
+  opacity: .7; }
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #f92672; }
+
+.token.boolean,
+.token.number {
+  color: #ae81ff; }
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #a6e22e; }
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: #f8f8f2; }
+
+.token.atrule,
+.token.attr-value,
+.token.function {
+  color: #e6db74; }
+
+.token.keyword {
+  color: #66d9ef; }
+
+.token.regex,
+.token.important {
+  color: #fd971f; }
+
+.token.important,
+.token.bold {
+  font-weight: bold; }
+
+.token.italic {
+  font-style: italic; }
+
+.token.entity {
+  cursor: help; }
 
 @media screen and (max-width: 800px) {
   .right {
