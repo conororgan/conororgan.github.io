@@ -15,6 +15,45 @@ h4 {
   font-weight: 700;
 }
 
+a {
+  color: #bd6e40;
+  font: 16px/1.5em "Nunito", sans-serif;
+  border-bottom: 1px solid rgba(#bd6e40, 0.25);
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: border-bottom 1s; /* Safari */
+    transition: border-bottom 1s;
+}
+
+a:hover {
+  color: #bd6e40;
+  border-bottom: 1px solid #bd6e40;
+  text-decoration: none;
+  -webkit-transition: border-bottom 1s; /* Safari */
+    transition: border-bottom 1s;
+}
+
+hr {
+  position: relative;
+  display: block;
+  color: grey;
+  width: 400px;
+  background: #eee;
+  color: #eee;
+  height: 2px;
+  margin: 40px auto;
+  top: -50vh;
+  border: none;
+}
+
+footer {
+  text-align: center;
+  background: rgba(0,0,0,.05);
+  padding: 40px;
+  position: relative;
+  display: block;
+  top: -40vh;
+}
 
 .portrait {
   background: url("/img/Bg.jpg");
@@ -106,16 +145,17 @@ li.slick-active {
 }
 
 
-#wallet, #showkase, #barrier, #travel {
+#wallet, #showkase, #barrier, #travel, #music {
   position: relative;
 
       overflow: hidden;
 
-  img {
+  img, iframe {
     display: block;
     margin: 40px auto 20px auto;
 
   }
+
 
   .info {
     width: 75%;
@@ -132,11 +172,9 @@ li.slick-active {
     }
 
     a {
+      font-size: 18px;
       color: #bd6e40;
-      font: 18px/1.5em "Nunito", sans-serif;
       text-transform: uppercase;
-      text-decoration: underline;
-      text-align: center;
     }
   }
 }
@@ -149,6 +187,23 @@ header {
 
 .project_sig {
   width: 200px;
+  opacity: 0.75;
+  -webkit-transition: opacity 1s; /* Safari */
+    transition: opacity 1s;
+}
+
+.project_sig:hover {
+  opacity: 1;
+  -webkit-transition: opacity 1s; /* Safari */
+    transition: opacity 1s;
+}
+
+.logo {
+  border-bottom: none;
+}
+
+.logo:hover {
+  border-bottom: none;
 }
 
 .title {
@@ -171,11 +226,12 @@ header {
 
 .title.wallet {
   background: url("/wallet/img/wallet_main.jpg") center top no-repeat;
+  background-size: cover;
 }
 
 .title.showkase {
-  background: url("/showkase/img/header.png") center top no-repeat;
-  background-size: contain;
+  background: url("/showkase/img/header.jpg") center top no-repeat;
+  background-size: cover;
 }
 
 .title.barrier {
@@ -230,6 +286,7 @@ header {
 
 .page_content h2, h4 {
   margin-top: 10px;
+  font-family: "Nunito", sans-serif;
 }
 
 .compare {
@@ -248,6 +305,8 @@ header {
   max-height: 400px;
   margin: 0 auto;
   text-align: center;
+  -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
 }
 
 .compare figure figcaption {
@@ -256,7 +315,8 @@ header {
 
 .compare figure:hover {
   width: 100%;
-
+  -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
 }
 
 .compare figure:hover img {

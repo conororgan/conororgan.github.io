@@ -158,6 +158,44 @@ pre {
 h4 {
   font-weight: 700; }
 
+a {
+  color: #bd6e40;
+  font: 16px/1.5em "Nunito", sans-serif;
+  border-bottom: 1px solid rgba(189, 110, 64, 0.25);
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: border-bottom 1s;
+  /* Safari */
+  transition: border-bottom 1s; }
+
+a:hover {
+  color: #bd6e40;
+  border-bottom: 1px solid #bd6e40;
+  text-decoration: none;
+  -webkit-transition: border-bottom 1s;
+  /* Safari */
+  transition: border-bottom 1s; }
+
+hr {
+  position: relative;
+  display: block;
+  color: grey;
+  width: 400px;
+  background: #eee;
+  color: #eee;
+  height: 2px;
+  margin: 40px auto;
+  top: -50vh;
+  border: none; }
+
+footer {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  position: relative;
+  display: block;
+  top: -40vh; }
+
 .portrait {
   background: url("/img/Bg.jpg");
   background-repeat: no-repeat;
@@ -224,34 +262,48 @@ li.slick-active {
 #showkase_img {
   padding-right: 20px; }
 
-#wallet, #showkase, #barrier, #travel {
+#wallet, #showkase, #barrier, #travel, #music {
   position: relative;
   overflow: hidden; }
-  #wallet img, #showkase img, #barrier img, #travel img {
+  #wallet img, #wallet iframe, #showkase img, #showkase iframe, #barrier img, #barrier iframe, #travel img, #travel iframe, #music img, #music iframe {
     display: block;
     margin: 40px auto 20px auto; }
-  #wallet .info, #showkase .info, #barrier .info, #travel .info {
+  #wallet .info, #showkase .info, #barrier .info, #travel .info, #music .info {
     width: 75%;
     margin: 40px auto; }
-    #wallet .info h2, #showkase .info h2, #barrier .info h2, #travel .info h2 {
+    #wallet .info h2, #showkase .info h2, #barrier .info h2, #travel .info h2, #music .info h2 {
       font: 24px/1.5em "Nunito", sans-serif;
       text-transform: uppercase; }
-    #wallet .info p, #showkase .info p, #barrier .info p, #travel .info p {
+    #wallet .info p, #showkase .info p, #barrier .info p, #travel .info p, #music .info p {
       font-size: 18px;
       margin-bottom: 40px; }
-    #wallet .info a, #showkase .info a, #barrier .info a, #travel .info a {
+    #wallet .info a, #showkase .info a, #barrier .info a, #travel .info a, #music .info a {
+      font-size: 18px;
       color: #bd6e40;
-      font: 18px/1.5em "Nunito", sans-serif;
-      text-transform: uppercase;
-      text-decoration: underline;
-      text-align: center; }
+      text-transform: uppercase; }
 
 header {
   width: 960px;
   margin: 10px auto; }
 
 .project_sig {
-  width: 200px; }
+  width: 200px;
+  opacity: 0.75;
+  -webkit-transition: opacity 1s;
+  /* Safari */
+  transition: opacity 1s; }
+
+.project_sig:hover {
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  /* Safari */
+  transition: opacity 1s; }
+
+.logo {
+  border-bottom: none; }
+
+.logo:hover {
+  border-bottom: none; }
 
 .title {
   position: relative;
@@ -269,11 +321,12 @@ header {
     margin: 0 auto; }
 
 .title.wallet {
-  background: url("/wallet/img/wallet_main.jpg") center top no-repeat; }
+  background: url("/wallet/img/wallet_main.jpg") center top no-repeat;
+  background-size: cover; }
 
 .title.showkase {
-  background: url("/showkase/img/header.png") center top no-repeat;
-  background-size: contain; }
+  background: url("/showkase/img/header.jpg") center top no-repeat;
+  background-size: cover; }
 
 .title.barrier {
   background: url("/barrier/img/sketch-13.jpg") center top no-repeat;
@@ -312,7 +365,8 @@ header {
   margin: 5px auto; }
 
 .page_content h2, h4 {
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-family: "Nunito", sans-serif; }
 
 .compare {
   margin: 0 auto; }
@@ -326,13 +380,19 @@ header {
 .compare img {
   max-height: 400px;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  -webkit-transition: width 1s;
+  /* Safari */
+  transition: width 1s; }
 
 .compare figure figcaption {
   margin-top: 10px; }
 
 .compare figure:hover {
-  width: 100%; }
+  width: 100%;
+  -webkit-transition: width 1s;
+  /* Safari */
+  transition: width 1s; }
 
 .compare figure:hover img {
   max-height: 600px; }
