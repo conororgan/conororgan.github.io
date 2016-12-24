@@ -28,7 +28,6 @@
 <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
 <meta name="theme-color" content="#bd6e40">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
   <link rel="stylesheet" href="/css/main.css">
 <link href="https://fonts.googleapis.com/css?family=Lora|Nunito:300,400" rel="stylesheet">
   <link rel="canonical" href="http://conororgan.me/about/">
@@ -37,50 +36,77 @@
 </head>
 
 
-  <body>
-
-    <header class="site-header">
-	<a href="/" class="logo"><img src="/img/signature.svg" class="project_sig" /></a>
-
+  <body class="preload container about">
+      <header class="site-header">
+	<div class="wrapper">
+		<a href="/" class="logo">Conor<span>//</span>Organ</a>
+	</div>
 </header>
 
+<nav>
+	<div class="wrapper">
+			<ul class="nav">
+				<li><a href="/" >Projects</a></li>
+				<li><a href="/about/"  class="active">Profile</a></li>
+			</ul>
+	</div>
+</nav>
 
-        <h1>Conor Organ</h1>
-<h2>Product Designer - Based in Ireland</h2>
-
-    
-<hr>
-<footer>
+      <div class="wrapper content">
+        <div class="column">
+          <div class="opening-text">
+            <h1>Conor Organ</h1>
+            <h2>Designer // Music Nerd // Computer Geek</h2>
+            <p>
+              I started using Photoshop when I was 13. I have been a devoted designer ever since that moment. This is why when the time came to pick a future career path product design jumped out at me.
+            </p>
+            <p>
+                Music has played a huge role in my life. I really enjoy producing my own work. In fact I have listened to over 20,000 songs in 2016 alone.  You can see what I am listening to at <a href="/Music">My Music site</a>.
+            </p>
+            <p>
+                I started to code at the age of 15 and this wetted my appetite for computer programming and development.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="opening-image">
+            <img src="/img/Bg.jpg" draggable="false" />
+          </div>
+        </div>
+      </div>
+      <footer>
+  <p class="dot">
+    //
+  </p>
+  <h1>Let's Make Something!</h1>
   <div class="wrapper">
-    Follow Conor Organ on <a href="http://instagram.com/conororgan">Instagram</a> // <a href="http://github.com/whyelse">Github</a> // <a href="http://ie.linkedin.com/in/conor-organ-56540a11b">LinkedIn</a>
+    <ul>
+        <li><a href="mailto:conor.organ2+website@gmail.com?subject=I want to work with you&body=Hey Conor! What I want: &nbsp; What my Budget is:">Email</a></li>
+        <li><a href="http://instagram.com/conororgan">Instagram</a></li>
+        <li><a href="http://github.com/whyelse">Github</a></li>
+        <li><a href="http://ie.linkedin.com/in/conor-organ-56540a11b">LinkedIn</a></li>
+    </ul>
   </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
 
-    <script   src="https://code.jquery.com/jquery-3.0.0.slim.min.js"   integrity="sha256-Rf4BadfyCtsvHmO89BUZcbYvNNvZvOT08ALfEzvCsD0="   crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/js/readingtime.js"></script>
-    <script>
+$(document).ready(function() {
+  $("nav a, header a").click(function(e) {
+      e.preventDefault();
+      var _href = $(this).attr("href");
+      console.log(_href);
 
-
-    $(function() {
-
-      $('.page_content').readingTime({
-        wordCountTarget: '.words',
+      $(".content, footer, nav, section").fadeOut(1000, function(){
+        $(".content, footer, nav, section").css("display", "none");
+        window.location.href = _href;
       });
 
-    });
-
-
-    </script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-71998130-1', 'auto');
-  ga('send', 'pageview');
+  });
+});
 
 </script>
+
   </body>
 
 </html>

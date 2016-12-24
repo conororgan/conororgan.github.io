@@ -1,4 +1,14 @@
 <header class="site-header">
-	<a href="/" class="logo"><img src="/img/signature.svg" class="project_sig" /></a>
-
+	<div class="wrapper">
+		<a href="/" class="logo">Conor<span>//</span>Organ</a>
+	</div>
 </header>
+
+<nav>
+	<div class="wrapper">
+			<ul class="nav">
+				<li><a href="/" {% if page.url == '/' %} class="active"{% endif %}>Projects</a></li>
+				<li><a href="/about/" {% if page.url == '/about/' %} class="active"{% endif %}>Profile</a></li>
+			</ul>
+	</div>
+</nav>
