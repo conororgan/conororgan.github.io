@@ -102,6 +102,10 @@ nav a:hover {
   width: 49%;
   box-sizing: border-box;
   vertical-align: top;
+
+  @include media-query($on-phone) {
+    width: 100%;
+  }
 }
 
 .opening-text {

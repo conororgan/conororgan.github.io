@@ -236,6 +236,9 @@ nav a:hover {
   width: 49%;
   box-sizing: border-box;
   vertical-align: top; }
+  @media screen and (max-width: 400px) {
+    .column {
+      width: 100%; } }
 
 .opening-text {
   position: relative;
