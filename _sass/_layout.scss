@@ -142,7 +142,7 @@ nav a:hover {
   width: 100%;
 
   @include media-query($on-palm) {
-    height: 200px;
+    height: 300px;
   }
 }
 
@@ -157,6 +157,10 @@ nav a:hover {
 #showkase {
   padding-top: 70px;
 
+  @include media-query($on-palm) {
+    padding-top: 20px;
+  }
+
   .box {
       background: #2d2e54;
 
@@ -165,7 +169,14 @@ nav a:hover {
         height: 300px;
         display: block;
         margin: 0 auto;
+
+          @include media-query($on-palm) {
+            height: 200px;
+            padding: 50px;
+          }
       }
+
+
 
       @include media-query($on-phone) {
 
@@ -190,6 +201,12 @@ nav a:hover {
 
       img {
         padding: 80px;
+
+        @include media-query($on-palm) {
+          height: 200px;
+          width: auto;
+          padding: 50px;
+        }
       }
 
       @include media-query($on-phone) {

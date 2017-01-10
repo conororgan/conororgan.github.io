@@ -267,7 +267,7 @@ nav a:hover {
   width: 100%; }
   @media screen and (max-width: 800px) {
     .box {
-      height: 200px; } }
+      height: 300px; } }
 
 .prod_title {
   font-family: "Lora", serif;
@@ -278,6 +278,9 @@ nav a:hover {
 
 #showkase {
   padding-top: 70px; }
+  @media screen and (max-width: 800px) {
+    #showkase {
+      padding-top: 20px; } }
   #showkase .box {
     background: #2d2e54; }
     #showkase .box img {
@@ -285,6 +288,10 @@ nav a:hover {
       height: 300px;
       display: block;
       margin: 0 auto; }
+      @media screen and (max-width: 800px) {
+        #showkase .box img {
+          height: 200px;
+          padding: 50px; } }
     @media screen and (max-width: 400px) {
       #showkase .box img {
         height: 100px;
@@ -298,6 +305,11 @@ nav a:hover {
     background: #0b0c0c; }
     #fandango .box img {
       padding: 80px; }
+      @media screen and (max-width: 800px) {
+        #fandango .box img {
+          height: 200px;
+          width: auto;
+          padding: 50px; } }
     @media screen and (max-width: 400px) {
       #fandango .box img {
         height: 100px;
