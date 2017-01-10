@@ -262,6 +262,10 @@ footer {
       color: $text-color;
       line-height: 2.5em;
       margin-bottom: 40px;
+
+      @include media-query($on-phone) {
+        line-height: 1.5em;
+      }
     }
 
     ul {
@@ -272,6 +276,10 @@ footer {
       display: inline-block;
       margin-left: 40px;
       font-size: 18px;
+
+      @include media-query($on-phone) {
+        font-size: 14px;
+      }
 
       a {
         color: $text-color;

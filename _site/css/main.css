@@ -343,12 +343,18 @@ footer {
     color: #444444;
     line-height: 2.5em;
     margin-bottom: 40px; }
+    @media screen and (max-width: 400px) {
+      footer h1 {
+        line-height: 1.5em; } }
   footer ul {
     margin-bottom: 60px; }
   footer ul li {
     display: inline-block;
     margin-left: 40px;
     font-size: 18px; }
+    @media screen and (max-width: 400px) {
+      footer ul li {
+        font-size: 14px; } }
     footer ul li a {
       color: #444444;
       border-bottom: 2px solid rgba(176, 72, 72, 0.5); }
