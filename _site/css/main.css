@@ -299,10 +299,35 @@ nav a:hover {
   #showkase .info {
     margin-left: 60px; }
 
+#shadowman_website {
+  padding-top: 70px; }
+  #shadowman_website .box {
+    background: #0b0c0c; }
+    #shadowman_website .box img {
+      padding: 80px; }
+      @media screen and (max-width: 800px) {
+        #shadowman_website .box img {
+          height: 200px;
+          width: auto;
+          padding: 50px; } }
+    @media screen and (max-width: 400px) {
+      #shadowman_website .box img {
+        height: 100px;
+        width: 183.328px;
+        padding: 50px; } }
+  #shadowman_website img {
+    display: block;
+    text-align: center; }
+  #shadowman_website .render {
+    height: 300px;
+    width: 550px;
+    text-align: center;
+    margin: 30px auto 0 auto; }
+
 #fandango {
   padding-top: 70px; }
   #fandango .box {
-    background: #0b0c0c; }
+    background: #000; }
     #fandango .box img {
       padding: 80px; }
       @media screen and (max-width: 800px) {
