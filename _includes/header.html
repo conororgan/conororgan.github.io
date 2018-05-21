@@ -1,14 +1,17 @@
 <header class="site-header">
 	<div class="wrapper">
-		<a href="/" class="logo">Conor<span>//</span>Organ</a>
+		<div class="left-header">
+			<a href="/" class="logo">Conor Organ</a>
+			<span class="tagline">Visual Designer</span>
+		</div>
+		<div class="right-header">
+			<nav>
+				<ul class="nav">
+					<li><a href="/" {% if page.url == '/' %} class="active"{% endif %}>Projects</a></li>
+					<li><a href="/about/" {% if page.url == '/about/' %} class="active"{% endif %}>Profile</a></li>
+				</ul>
+				</div>
+
+			</nav>
 	</div>
 </header>
-
-<nav>
-	<div class="wrapper">
-			<ul class="nav">
-				<li><a href="/" {% if page.url == '/' %} class="active"{% endif %}>Projects</a></li>
-				<li><a href="/about/" {% if page.url == '/about/' %} class="active"{% endif %}>Profile</a></li>
-			</ul>
-	</div>
-</nav>

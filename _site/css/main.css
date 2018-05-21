@@ -13,8 +13,8 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: 300 16px/1.5em Nunito, sans-serif;
-  color: #444444;
-  background-color: #f5f5f5;
+  color: #675b5e;
+  background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -77,7 +77,7 @@ a {
   a:visited {
     color: #b04848; }
   a:hover {
-    color: #444444;
+    color: #675b5e;
     border-bottom: 1px solid #b04848; }
 
 /**
@@ -157,39 +157,45 @@ pre {
     fill: #828282; }
 
 .site-header {
-  background: #e0e0e0;
-  height: 200px;
-  line-height: 200px;
-  font-size: 35px;
+  height: 150px;
+  line-height: 1.5em;
   font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  text-align: center; }
+  text-transform: uppercase; }
+  .site-header .wrapper {
+    padding-top: 40px; }
   @media screen and (max-width: 800px) {
     .site-header {
       min-width: 100%; } }
   .site-header .logo {
     text-align: center;
-    color: #444444;
+    color: #b04848;
     width: 350px;
-    padding: 60px 0;
-    background: none; }
+    background: none;
+    letter-spacing: 5px;
+    font-size: 24px;
+    margin-top: 60px; }
     .site-header .logo span {
       color: #b04848; }
-  .site-header .logo:hover {
-    color: transparent;
-    background-image: url("/img/signature.svg");
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    border: none; }
-  .site-header .logo:hover span {
-    color: transparent; }
+  .site-header .tagline {
+    font-family: 'Lora', Georgia, serif;
+    font-style: italic;
+    letter-spacing: 5px;
+    display: block;
+    line-height: 2em;
+    color: #231f20;
+    opacity: .5;
+    width: 300px; }
+  .site-header .left-header {
+    float: left; }
+
+.right-header {
+  float: right; }
 
 nav {
-  text-align: center;
   margin-top: 20px;
-  font-size: 18px; }
+  font-size: 18px;
+  text-align: right;
+  vertical-align: middle; }
   nav ul {
     margin-left: 0; }
 
@@ -198,23 +204,23 @@ nav {
   margin-left: 50px; }
 
 nav a {
-  color: #444444;
+  color: #675b5e;
   -webkit-transition: border-bottom .5s;
   transition: border-bottom .5s;
   text-decoration: none;
-  border-bottom: 2px solid rgba(68, 68, 68, 0); }
+  border-bottom: 2px solid rgba(103, 91, 94, 0); }
 
 nav a:visited {
-  color: #444444; }
+  color: #675b5e; }
 
 nav a:hover {
   text-decoration: none; }
 
 a.active {
-  border-bottom: 2px solid rgba(68, 68, 68, 0.5); }
+  border-bottom: 2px solid rgba(103, 91, 94, 0.5); }
 
 nav a:hover {
-  border-bottom: 2px solid #444444;
+  border-bottom: 2px solid #675b5e;
   text-decoration: none;
   -webkit-transition: border-bottom .2s;
   transition: border-bottom .2s; }
@@ -223,7 +229,7 @@ nav a:hover {
   margin-left: 0; }
 
 .nav li::before {
-  content: "//";
+  content: "";
   margin-right: 10px;
   border: none; }
 
@@ -366,7 +372,7 @@ nav a:hover {
   .info p {
     margin: 50px auto;
     max-width: 700px;
-    color: #444;
+    color: #675b5e;
     font-family: "Nunito", sans-serif; }
 
 footer {
@@ -377,7 +383,7 @@ footer {
     line-height: 2.5em; }
   footer h1 {
     font: 40px "Lora", serif;
-    color: #444444;
+    color: #675b5e;
     line-height: 2.5em;
     margin-bottom: 40px; }
     @media screen and (max-width: 400px) {
@@ -393,7 +399,7 @@ footer {
       footer ul li {
         font-size: 14px; } }
     footer ul li a {
-      color: #444444;
+      color: #675b5e;
       border-bottom: 2px solid rgba(176, 72, 72, 0.5); }
     footer ul li a:hover {
       border-bottom: 2px solid #b04848; }
