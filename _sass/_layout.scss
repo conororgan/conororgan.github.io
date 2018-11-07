@@ -146,6 +146,41 @@ nav a:hover {
   }
 }
 
+#clients {
+  margin: 60px auto;
+
+  h2 {
+    font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      letter-spacing: 5px;
+      display: block;
+      line-height: 2em;
+      color: #231f20;
+      opacity: .5;
+      text-align: center;
+      text-transform: uppercase;
+  }
+}
+
+
+
+.clients {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  list-style-type: none;
+  opacity: 0.8;
+}
+
+
+.clients li {
+  appearance: none;
+  vertical-align: middle;
+  height: 80px;
+    line-height: 80px;
+}
+
 .box {
   height: 500px;
   width: 100%;
@@ -159,7 +194,7 @@ nav a:hover {
   font-family: "Lora", serif;
   color: $brand-color;
   display: inline-block;
-  margin: 50px 70px 0 70px;
+  margin: 50px 70px 0 0;
   vertical-align: top;
 }
 
