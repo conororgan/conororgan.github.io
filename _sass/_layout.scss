@@ -146,6 +146,25 @@ nav a:hover {
   }
 }
 
+
+
+.box {
+  height: 500px;
+  width: 100%;
+
+  @include media-query($on-palm) {
+    height: 300px;
+  }
+}
+
+.prod_title {
+  font-family: "Lora", serif;
+  color: $brand-color;
+  display: inline-block;
+  margin: 50px 70px 0 0;
+  vertical-align: top;
+}
+
 #clients {
   margin: 60px auto;
 
@@ -179,23 +198,6 @@ nav a:hover {
   vertical-align: middle;
   height: 80px;
     line-height: 80px;
-}
-
-.box {
-  height: 500px;
-  width: 100%;
-
-  @include media-query($on-palm) {
-    height: 300px;
-  }
-}
-
-.prod_title {
-  font-family: "Lora", serif;
-  color: $brand-color;
-  display: inline-block;
-  margin: 50px 70px 0 0;
-  vertical-align: top;
 }
 
 #showkase {

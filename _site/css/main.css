@@ -268,6 +268,20 @@ nav a:hover {
     .opening-image img {
       display: none; } }
 
+.box {
+  height: 500px;
+  width: 100%; }
+  @media screen and (max-width: 800px) {
+    .box {
+      height: 300px; } }
+
+.prod_title {
+  font-family: "Lora", serif;
+  color: #b04848;
+  display: inline-block;
+  margin: 50px 70px 0 0;
+  vertical-align: top; }
+
 #clients {
   margin: 60px auto; }
   #clients h2 {
@@ -294,20 +308,6 @@ nav a:hover {
   vertical-align: middle;
   height: 80px;
   line-height: 80px; }
-
-.box {
-  height: 500px;
-  width: 100%; }
-  @media screen and (max-width: 800px) {
-    .box {
-      height: 300px; } }
-
-.prod_title {
-  font-family: "Lora", serif;
-  color: #b04848;
-  display: inline-block;
-  margin: 50px 70px 0 0;
-  vertical-align: top; }
 
 #showkase {
   padding-top: 70px; }
