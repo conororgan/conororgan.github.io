@@ -4,22 +4,15 @@
   {% include head.html %}
 
   <body class="preload container">
-    {% include header.html %}
-    <div class="wrapper content">
-      <div class="column">
-        <div class="opening-text">
-          <h1>Start Up</h1>
-          <h1>Web & App</h1>
-          <h1>Design</h1>
+    <section id="top-area">
+        {% include header.html %}
+        <div class="wrapper">
+          <h1 id="hero-text">Beautiful Websites,<br> Designed <span class="small-h1">&</span> Developed <span class="small-h1">for</span><br> Startups</h1>
+          <div id="main-cta">
+            <a href="/contact/" class="cta">Get Started Now</a>
+          </div>
         </div>
-      </div>
-
-      <div class="column">
-        <div class="opening-image">
-          <img src="/img/bg.png" draggable="false" />
-        </div>
-      </div>
-    </div>
+    </section>
     <section class="wrapper" id="clients">
         <h2>Has worked with</h2>
         <ul class="clients">
@@ -28,78 +21,21 @@
             <li><img src="/img/mc-afee.png" /></li>
         </ul>
     </section>
-    <section id="klen">
-        <div class="box wrapper">
-          <img src="/img/klen.png" class="render prod" />
+    <section class="wrapper" id="work">
+        <a class="shadowmansports project" data-name="Shadowman Sports" href="/shadowmansports/">
+              <img src="/img/shadowmansports.png" />
+        </a>
+        <div class="tuuth project" data-name="Tuuth">
+            <img src="/img/tuuth.png" />
         </div>
-        <div class="wrapper">
-        <h2 class="prod_title">klen</h2>
-        <div class="info wrapper">
-          <ul>
-            <li>2018</li>
-            <li>Product Design</li>
-          </ul>
-          <p>
-              Air Quality in Urban Environments is deteriorating, with pollutants and particulate matter flooding our air. It is getting increasingly important to take care of our lungs. With klen breathing clean air is easier than before. The hand-held device allows you to take clean breaths as needed through it’s unique filtration system.          </p>
+        <a class="msgai project" data-name="Msg.ai" href="/msgai/"> 
+            <img src="/img/msgai.png" />
+        </a>
+        <div id="main-cta">
+          <a href="/contact/" class="cta">Contact Me</a>
         </div>
-      </div>
     </section>
-    <section id="shadowman_website">
-        <div class="box wrapper">
-          <img src="/img/shadowmansports.png" class="render prod" />
-        </div>
-        <div class="wrapper">
-        <h2 class="prod_title">Shadowman Sports Website</h2>
-        <div class="info wrapper">
-          <ul>
-            <li>2017 </li>
-            <li>Website Design</li>
-          </ul>
-          <p>
-             Shadowman Sports are  dedicated to creating innovative solutions that will lead to a better, smarter sports environments. The black and white tackle system has taken the American Football world by storm with the Shadowman Pro being used by NFL teams like the New York Giants, Washington Redskins and Oakland Raiders. Every growing business needs a modern website, I updated the website in a series of iterations over the course of 9 months.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="fandango">
-        <div class="box wrapper">
-          <img src="/img/fandango_render.png" class="render prod" />
-        </div>
-        <div class="wrapper">
-        <h2 class="prod_title">Kobai Fandango</h2>
-        <div class="info wrapper">
-          <ul>
-            <li>2016</li>
-            <li>Industrial Design</li>
-          </ul>
-          <p>
-            The Kobai Fandango is a camera designed for the
-modern day young creative. Young creatives can’t
-afford expensive DSLR cameras. The Fandango fills
-the gap in the market for a good looking, easy to use
-camera. Cold to touch, the metal case means that from the moment the Fandango is picked up you sense it's aura.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="showkase">
-        <div class="box wrapper">
-          <img src="/img/showkase.png" class="render prod" />
-        </div>
-        <div class="wrapper">
-        <h2 class="prod_title">Showkase</h2>
-        <div class="info wrapper">
-          <ul>
-            <li>2016</li>
-            <li>UI Design, Branding</li>
-          </ul>
-          <p>
-            A website for designers and other creatives to showcase their latest projects. Designed to work for both small and large projects.
-            This site makes it simple for designers to upload images and create a case study to show off their work to both clients and other designers.
-          </p>
-        </div>
-      </div>
-    </section>
+
     {% include footer.html %}
   </body>
 </html>

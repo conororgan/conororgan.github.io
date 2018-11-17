@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Conor Organ - Product Designer</title>
-  <meta name="description" content="Conor Organ Irish Product Designer's Portfolio website">
+  <meta name="description" content="Msg.ai">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
@@ -32,13 +32,13 @@
 
   <link rel="stylesheet" href="/css/main.css">
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="canonical" href="http://conororgan.me/profile.html">
+  <link rel="canonical" href="http://conororgan.me/msgai/">
   <link rel="alternate" type="application/rss+xml" title="Conor Organ" href="http://conororgan.me/feed.xml">
 
 </head>
 
 
-  <body class="preload container about">
+  <body class="preload container work-display">
     <section id="top-area">
         <header class="site-header">
 	<div class="wrapper">
@@ -60,29 +60,13 @@
 
     </section>
       <div class="wrapper content">
-        <div class="column">
-          <div class="opening-text">
-            <p>A recent graduate of Product Design & Technology in the University of Limerick, I started programming at the age of 13 and can write code in 5 languages.</p>
-            <p>While part of the Shadowman Sports Design & Marketing Team, I was in charge of the website which doubled in traffic over the time I was in charge. I was also part of an Advertisting Campaign which broke numurous Click Through Rate Records.</p>
-            <p>I am currently <span style="color:green;">Available</span> for freelance opportunities.</p>
-            <div id="main-cta">
-              <a href="/contact/" class="cta">Contact Me</a>
-            </div>
-          </div>
-          <div class="last-fm">
-            <h3>Currently Listening:</h3>
-              <img id="artwork" src="" />
-              <div class="artist-info">
-                <h4 id="song-Name"></h4>
-                <h5 id="artist-Name"></h5>
-              </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="opening-image">
-            <img src="/img/bg.png" draggable="false" />
-          </div>
-        </div>
+            <h1 id="msgai">Msg.ai</h1>
+
+<p><img src="/img/msgai/landing-page.png" alt="Home Screen" />
+Home Screen</p>
+
+<p>This website is a concept. All rights to relevant holders.</p>
+
       </div>
       <footer>
   <h5>© 2018 CONOR ORGAN</h5>
@@ -109,30 +93,5 @@ $(document).ready(function() {
 
 </script>
 
-      <script type="text/javascript">
-      $.ajax({
-          type : 'POST',
-          url : 'http://ws.audioscrobbler.com/2.0/',
-          data : 'method=user.getrecenttracks&' +
-                 'user=whyelse&' +
-                 'api_key=ee5696757919d38bc8660c1d101b60e2&' +
-                 'format=json',
-          dataType : 'jsonp',
-          success : function(data) {
-
-              $('#artwork').attr("src", data.recenttracks.track[0].image[3]['#text']);
-              $('#artist-Name').html(data.recenttracks.track[0].artist['#text']);
-              $('#song-Name').html(data.recenttracks.track[0].name);
-
-              if(data.recenttracks.track[0]['@attr'].nowplaying== "true") {
-                $('#artwork').addClass('rotate');
-              }
-          },
-          error : function(code, message){
-              $('#error').html('Error Code: ' + code + ', Error Message: ' + message);
-          }
-      });
-      </script>
   </body>
-
 </html>

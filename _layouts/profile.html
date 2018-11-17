@@ -4,21 +4,26 @@
   {% include head.html %}
 
   <body class="preload container about">
-      {% include header.html %}
+    <section id="top-area">
+        {% include header.html %}
+    </section>
       <div class="wrapper content">
         <div class="column">
           <div class="opening-text">
-            <h1>Conor Organ</h1>
-            <h2>Designer // Music Nerd // Computer Geek</h2>
-            <p>
-              I started using Photoshop when I was 13. I have been a devoted designer ever since that moment. This is why when the time came to pick a future career path product design jumped out at me.
-            </p>
-            <p>
-                Music has played a huge role in my life. I really enjoy producing my own work. In fact I have listened to over 20,000 songs in 2016 alone.  You can see what I am listening to at <a href="/Music">My Music site</a>.
-            </p>
-            <p>
-                I started to code at the age of 15 and this wetted my appetite for computer programming and development.
-            </p>
+            <p>A recent graduate of Product Design & Technology in the University of Limerick, I started programming at the age of 13 and can write code in 5 languages.</p>
+            <p>While part of the Shadowman Sports Design & Marketing Team, I was in charge of the website which doubled in traffic over the time I was in charge. I was also part of an Advertisting Campaign which broke numurous Click Through Rate Records.</p>
+            <p>I am currently <span style="color:green;">Available</span> for freelance opportunities.</p>
+            <div id="main-cta">
+              <a href="/contact/" class="cta">Contact Me</a>
+            </div>
+          </div>
+          <div class="last-fm">
+            <h3>Currently Listening:</h3>
+              <img id="artwork" src="" />
+              <div class="artist-info">
+                <h4 id="song-Name"></h4>
+                <h5 id="artist-Name"></h5>
+              </div>
           </div>
         </div>
         <div class="column">
@@ -28,6 +33,30 @@
         </div>
       </div>
       {% include footer.html %}
+      <script type="text/javascript">
+      $.ajax({
+          type : 'POST',
+          url : 'http://ws.audioscrobbler.com/2.0/',
+          data : 'method=user.getrecenttracks&' +
+                 'user=whyelse&' +
+                 'api_key=ee5696757919d38bc8660c1d101b60e2&' +
+                 'format=json',
+          dataType : 'jsonp',
+          success : function(data) {
+
+              $('#artwork').attr("src", data.recenttracks.track[0].image[3]['#text']);
+              $('#artist-Name').html(data.recenttracks.track[0].artist['#text']);
+              $('#song-Name').html(data.recenttracks.track[0].name);
+
+              if(data.recenttracks.track[0]['@attr'].nowplaying== "true") {
+                $('#artwork').addClass('rotate');
+              }
+          },
+          error : function(code, message){
+              $('#error').html('Error Code: ' + code + ', Error Message: ' + message);
+          }
+      });
+      </script>
   </body>
 
 </html>

@@ -6,7 +6,7 @@
 
 
 // Our variables
-$base-font-family: Nunito, sans-serif;
+$base-font-family: 'Lato', sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 300;
 $small-font-size:  $base-font-size * 0.875;
@@ -14,9 +14,9 @@ $base-line-height: 1.5em;
 
 $spacing-unit:     30px;
 
-$text-color:       lighten(#231f20, 25%);
+$text-color:       #919191;
 $background-color: #fff;
-$brand-color:      #b04848;
+$brand-color:      #B04848;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
