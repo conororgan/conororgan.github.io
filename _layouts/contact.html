@@ -6,12 +6,14 @@
   <body class="preload container about">
     <section id="top-area">
         {% include header.html %}
+          <h1 id="hero-text">I would love to hear from you</h1>
     </section>
   <div class="wrapper content">
 <form method="POST" action="https://formspree.io/design@conororgan.me">
-  <input type="email" name="email" placeholder="Your email">
-  <textarea name="message" placeholder="Test Message"></textarea>
-  <button type="submit">Send Test</button>
+  <input type="text" name="name" placeholder="Name">
+  <input type="email" name="email" placeholder="Email"><br>
+  <textarea name="message" placeholder="Your Message"></textarea>
+  <button type="submit">Send</button>
 </form>
 </div>
 {% include footer.html %}

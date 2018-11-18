@@ -515,15 +515,32 @@ nav a:hover {
   font-weight: bold;
 }
 
-input[type=email] {
+input[type=email], input[type=text], textarea {
   -webkit-appearance: none;
   border: 0px;
   border-bottom: 2px solid #c4c4c4;
   outline: none;
   border-radius: 0;
   padding: 5px 10px 10px 7px;
-  font-size: 24px;
+  font-size: 18px;
+  margin: 10px;
+}
 
+button {
+  display: block;
+  -webkit-appearance: none;
+  outline: none;
+  border: 0;
+  background: #202020;
+  color: #fff !important;
+  border-radius: 10px;
+  width: 260px;
+  height: 55px;
+  padding: 15px 60px;
+  margin: 40px 0;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 
 .work-display {
