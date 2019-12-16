@@ -1,8 +1,7 @@
 ---
-layout: website
+layout: blog-post
 title:  "Tuuth"
-permalink: /tuuth/
-categories: [work]
+categories: [blog]
 ---
 
 # Tuuth

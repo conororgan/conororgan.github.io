@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="preload container about">
+    <section id="top-area">
+        {% include header.html %}
+    </section>
+      <div class="wrapper content">
+        <div class="column">
+          {% for category in site.categories %}
+          {% if category[0] == "blog" %}
+          <ul>
+            {% for post in category[1] %}
+              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+  {% endfor %}
+        </div>
+      </div>
+      {% include footer.html %}
+
+  </body>
+
+</html>
