@@ -3,7 +3,7 @@
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
 /** Basic styling */
-body { font: 300 16px/1.5em "Lato", sans-serif; color: #919191; background-color: #fff; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; overflow-x: hidden; width: 100%; }
+body { font: 300 16px/1.5em "Space mono", monospace; color: #fefefe; background-color: #B04848; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; overflow-x: hidden; width: 100%; font-family: 'Space Mono', monospace; }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
@@ -23,11 +23,11 @@ li > ul, li > ol { margin-bottom: 0; }
 h1, h2, h3, h4, h5, h6 { font-weight: 300; }
 
 /** Links */
-a { color: #B04848; text-decoration: none; }
+a { color: #fefefe; text-decoration: none; }
 
-a:visited { color: #B04848; }
+a:visited { color: #fefefe; }
 
-a:hover { color: #919191; border-bottom: 1px solid #B04848; }
+a:hover { color: #fefefe; border-bottom: 1px solid #B04848; }
 
 /** Blockquotes */
 blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 18px; letter-spacing: -1px; font-style: italic; }
@@ -60,9 +60,31 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .icon > svg path { fill: #828282; }
 
-#top-area { background: #B04848; padding-bottom: 40px; overflow: hidden; position: relative; }
+#top-area { background: #B04848; height: 100vh; margin-bottom: 40px; overflow: hidden; position: relative; }
+
+#top-area h1 { position: absolute; bottom: 60px; }
+
+h2 { font-family: 'Noto Sans', sans-serif; font-weight: 800; font-size: 24px; }
+
+h3 { opacity: 0.75; }
+
+.project-section, .post-section { margin-top: 100px; }
+
+.project, .post { display: flex; justify-content: space-between; padding: 50px 40px; border: 3px solid #B04848; transition: border .5s ease-in; border-radius: 10px; }
+
+.project svg, .post svg { opacity: 0.5; transition: opacity 1s ease; }
+
+.project:hover svg, .post:hover svg { transition: opacity 1s ease; opacity: 1.0; }
+
+.project:hover, .post:hover { border: 3px solid #fefefe; }
 
 .about #top-area, .work-display #top-area { padding-bottom: 0; }
+
+hr { display: block; background: #fefefe; height: 1px; border: 0; border-top: 1px solid #fefefe; border-bottom: 1px solid #fefefe; margin: 25px 0px 80px 0px; border-radius: 2px; }
+
+hr:after { content: url("/img/signature.svg"); left: 50%; height: 110px; position: absolute; transform: translateY(-50%) translateX(-50%); /* Controls the whitespace around the symbol */ padding: 20px; background: #B04848; }
+
+.post_title { font-size: 24px; padding-top: 20px; font-weight: bold; }
 
 #top-area::before { content: ''; position: absolute; height: 800px; width: 800px; border: 4px solid #C76060; border-radius: 400px; animation-name: before-move; animation-duration: 25s; animation-delay: 1s; animation-iteration-count: infinite; animation-timing-function: linear; animation-direction: alternate; }
 
@@ -202,7 +224,7 @@ nav a:hover { border-bottom: 2px solid white; text-decoration: none; -webkit-tra
 
 .info ul li::before { content: "●"; margin-right: 10px; }
 
-.info p { margin: 50px auto; max-width: 700px; color: #919191; font-family: "Nunito", sans-serif; }
+.info p { margin: 50px auto; max-width: 700px; color: #fefefe; font-family: "Nunito", sans-serif; }
 
 .last-fm { margin-top: 40px; }
 
@@ -228,9 +250,9 @@ button { display: block; -webkit-appearance: none; outline: none; border: 0; bac
 
 .work-display h1 { text-align: center; font-family: Georgia,serif; margin-bottom: 40px; }
 
-footer { text-align: center; margin-top: 40px; }
+footer { text-align: center; margin-top: 200px; }
 
-footer h1 { font: 40px Georgia, serif; color: #919191; line-height: 2.5em; margin-bottom: 40px; }
+footer h1 { font: 40px Georgia, serif; color: #fefefe; line-height: 2.5em; margin-bottom: 40px; }
 
 @media screen and (max-width: 400px) { footer h1 { line-height: 1.5em; } }
 
@@ -240,7 +262,7 @@ footer ul li { display: inline-block; margin-left: 40px; font-size: 18px; }
 
 @media screen and (max-width: 400px) { footer ul li { font-size: 14px; } }
 
-footer ul li a { color: #919191; border-bottom: 2px solid rgba(176, 72, 72, 0.5); }
+footer ul li a { color: #fefefe; border-bottom: 2px solid rgba(176, 72, 72, 0.5); }
 
 footer ul li a:hover { border-bottom: 2px solid #b04848; }
 

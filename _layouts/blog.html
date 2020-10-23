@@ -6,20 +6,37 @@
   <body class="preload container about">
     <section id="top-area">
         {% include header.html %}
+        <div class="wrapper">
+        <h1>Thoughts</h1>
+        </div>
     </section>
+    <section class="post-section">
+
       <div class="wrapper content">
-        <div class="column">
           {% for category in site.categories %}
           {% if category[0] == "blog" %}
-          <ul>
+
             {% for post in category[1] %}
-              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            <a href="{{post.url}}">
+            <article class="post">
+              <div class="left">
+              <h2 class="post_title">{{ post.title }}</h2>
+              {{post.content}}
+            </div>
+            <div class="right">
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="40" height="75" viewBox="0 0 200 200">
+                <path d="M166.11,35.3V82.87a5.5,5.5,0,0,1-11,0V48.57L35.09,168.59a5.4978,5.4978,0,0,1-7.78-7.77L147.33,40.8H109.37a5.5,5.5,0,0,1,0-11h51.24a5.343,5.343,0,0,1,2.23.48,3.4917,3.4917,0,0,1,.39.19,5.4405,5.4405,0,0,1,1.94,1.75,2.9039,2.9039,0,0,1,.2.33,5.0011,5.0011,0,0,1,.49,1.11,3.1129,3.1129,0,0,1,.11.41,4.9272,4.9272,0,0,1,.11.67A5.1154,5.1154,0,0,1,166.11,35.3Z" style="fill: #fff"/>
+              </svg>
+
+            </div>
+          </article>
+          </a>
             {% endfor %}
-          </ul>
           {% endif %}
   {% endfor %}
-        </div>
       </div>
+
+    </section>
       {% include footer.html %}
 
   </body>

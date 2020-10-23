@@ -16,7 +16,7 @@ dl, dd, ol, ul, figure {
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
-    background-color: $background-color;
+    background-color: $brand-color;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
@@ -25,6 +25,7 @@ body {
     font-kerning: normal;
     overflow-x: hidden;
     width: 100%;
+    font-family: 'Space Mono', monospace;
 }
 
 
@@ -97,11 +98,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $text-color;
     text-decoration: none;
 
     &:visited {
-        color: $brand-color;
+        color: $text-color;
     }
 
     &:hover {

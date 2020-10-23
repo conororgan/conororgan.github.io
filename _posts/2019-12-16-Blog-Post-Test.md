@@ -1,10 +1,13 @@
 ---
 layout: blog-post
-title:  "Tuuth"
+title:  "Test"
 categories: [blog]
+excerpt_separator: <!--more-->
 ---
 
-# Tuuth
+# This is a Test
 
-![Home Screen](/img/tuuth/opening-screen.png)
-Home Screen
+jkaskjhsafjhsfajhksfa
+ihsahsakhsaf
+<!--more-->
+saoihsfajklfsalkasfnkl
