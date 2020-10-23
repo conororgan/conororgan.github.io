@@ -2,6 +2,7 @@
 layout: website
 title:  "Shadowman Sports"
 permalink: /shadowmansports/
+categories: [work]
 ---
 
 # Shadowman Sports

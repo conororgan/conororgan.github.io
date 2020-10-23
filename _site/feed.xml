@@ -3,11 +3,29 @@
   <channel>
     <title>Conor Organ</title>
     <description>Conor Organ Irish Product Designer's Portfolio website</description>
-    <link>http://conororgan.me/</link>
-    <atom:link href="http://conororgan.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 22 Nov 2018 10:40:24 +0000</pubDate>
-    <lastBuildDate>Thu, 22 Nov 2018 10:40:24 +0000</lastBuildDate>
-    <generator>Jekyll v3.2.0</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 13 Oct 2020 15:32:28 +0100</pubDate>
+    <lastBuildDate>Tue, 13 Oct 2020 15:32:28 +0100</lastBuildDate>
+    <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Test</title>
+        <description>&lt;h1 id=&quot;this-is-a-test&quot;&gt;This is a Test&lt;/h1&gt;
+
+&lt;p&gt;jkaskjhsafjhsfajhksfa
+ihsahsakhsaf
+&lt;!--more--&gt;
+saoihsfajklfsalkasfnkl&lt;/p&gt;
+</description>
+        <pubDate>Mon, 16 Dec 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/blog/2019/12/16/Blog-Post-Test.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/12/16/Blog-Post-Test.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Tuuth</title>
@@ -17,9 +35,11 @@
 Home Screen&lt;/p&gt;
 </description>
         <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
-        <link>http://conororgan.me/tuuth/</link>
-        <guid isPermaLink="true">http://conororgan.me/tuuth/</guid>
+        <link>http://localhost:4000/tuuth/</link>
+        <guid isPermaLink="true">http://localhost:4000/tuuth/</guid>
         
+        
+        <category>work</category>
         
       </item>
     
@@ -37,9 +57,11 @@ Product Screen&lt;/p&gt;
 Drill Library&lt;/p&gt;
 </description>
         <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
-        <link>http://conororgan.me/shadowmansports/</link>
-        <guid isPermaLink="true">http://conororgan.me/shadowmansports/</guid>
+        <link>http://localhost:4000/shadowmansports/</link>
+        <guid isPermaLink="true">http://localhost:4000/shadowmansports/</guid>
         
+        
+        <category>work</category>
         
       </item>
     
@@ -53,9 +75,11 @@ Home Screen&lt;/p&gt;
 &lt;p&gt;This website is a concept. All rights to relevant holders.&lt;/p&gt;
 </description>
         <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
-        <link>http://conororgan.me/msgai/</link>
-        <guid isPermaLink="true">http://conororgan.me/msgai/</guid>
+        <link>http://localhost:4000/msgai/</link>
+        <guid isPermaLink="true">http://localhost:4000/msgai/</guid>
         
+        
+        <category>work</category>
         
       </item>
     
