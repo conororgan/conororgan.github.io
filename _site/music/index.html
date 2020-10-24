@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Conor Organ - Product Designer</title>
-  <meta name="description" content="Msg.ai">
+  <title>Recently Played - Conor Organ</title>
+  <meta name="description" content="Conor Organ Irish Product Designer's Portfolio website">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
@@ -30,19 +29,21 @@
 <meta name="google-site-verification" content="Ma-8XguQccx5dC0EB4TBR4X_ir7bQ89HC-2GcojECbc" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="/css/main.css">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Space+Mono&display=swap" rel="stylesheet">  <link rel="canonical" href="http://localhost:4000/msgai/">
+  <link rel="stylesheet" href="/css/music.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Space+Mono&display=swap" rel="stylesheet">  <link rel="canonical" href="http://localhost:4000/music/">
   <link rel="alternate" type="application/rss+xml" title="Conor Organ" href="http://localhost:4000/feed.xml">
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/imagetoascii.js"></script>
+<script type="text/javascript" src="/js/getColour.js"></script>
+<script type="text/javascript" src="/js/getRecentTracks.js"></script>
 
 </head>
+<body>
+  <div id="tracks">
 
-
-  <body class="preload container work-display">
-    <section id="top-area">
-        <header class="site-header">
-	<div class="wrapper">
-		<div class="left-header">
-			<a href="/" class="logo"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  </div>
+  <div class="info">
+      <a href="/"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				 width="219px" height="110px" viewBox="0 0 367.391 185" enable-background="new 0 0 367.391 185" xml:space="preserve">
 			<g>
 				<g>
@@ -115,67 +116,7 @@
 						C226.511,110.057,230.022,112.089,231.42,109.889L231.42,109.889z"/>
 				</g>
 			</g>
-			</svg>
-</a>
-		</div>
-		<div class="right-header">
-			<nav>
-				<ul class="nav">
-				</ul>
-			</nav>
-			</div>
-	</div>
-</header>
-
-    </section>
-      <div class="wrapper content">
-            <h1 id="msgai">Msg.ai</h1>
-
-<p><img src="/img/msgai/landing-page.png" alt="Home Screen" />
-Home Screen</p>
-
-<p>This website is a concept. All rights to relevant holders.</p>
-
-      </div>
-      <div id="main-cta">
-        <a href="/contact/" class="cta">Contact Me</a>
-      </div>
-      <footer>
-  <div class="wrapper">
-    <hr>
-    <h5>© 2020 CONOR ORGAN</h5>
+			</svg></a>
   </div>
-
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-
-<script>
-
-$(document).ready(function() {
-  $("nav a, header a").click(function(e) {
-      e.preventDefault();
-      var _href = $(this).attr("href");
-      console.log(_href);
-
-      $(".content, footer, nav, section").fadeOut(1000, function(){
-        $(".content, footer, nav, section").css("display", "none");
-        window.location.href = _href;
-      });
-
-  });
-});
-
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-71998130-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-71998130-1');
-</script>
-
-  </body>
+</body>
 </html>

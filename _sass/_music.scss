@@ -1,0 +1,87 @@
+body {
+  font-family: 'Space mono', monospace;
+}
+
+#tracks section {
+  height: 100vh;
+  width: 100vw;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 120px;
+  @include media-query($on-phone) {
+    width: 100%;
+    height: auto;
+  }
+  @include media-query($on-palm) {
+    width: 80%;
+    height: auto;
+  }
+}
+
+.album-art {
+  width: 340px;
+  font-size: 2px;
+  line-height: 1em;
+  margin: 0px auto;
+}
+
+.wrapper p {
+  text-align: center;
+}
+
+.title {
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+
+.info {
+  position: fixed;
+  background: #0C0C0D;
+  height: 50px;
+  width: 200px;
+  bottom: 50px;
+  left: 0px;
+  text-align: right;
+  border-radius: 0 25px 25px 0;
+
+}
+
+.info svg {
+  margin-top: -28px;
+  width: 100px;
+}
+
+
+pre {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 0 0 0 0;
+  background: transparent;
+  border: none;
+  font: 300 3px/1em "Space mono", monospace;
+  text-align: center;
+
+  @include media-query($on-palm) {
+    width: 80%;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 3px !important;
+  }
+
+  @include media-query($on-phone) {
+    width: 80%;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 3px !important;
+  }
+}
