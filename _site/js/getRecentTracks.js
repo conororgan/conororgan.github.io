@@ -1,5 +1,5 @@
 $(document).ready(function() {
-       $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=whyelse&api_key=ee5696757919d38bc8660c1d101b60e2&&limit=10&format=json&callback=?", function(data) {
+       $.getJSON("https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=whyelse&api_key=ee5696757919d38bc8660c1d101b60e2&&limit=10&format=json&callback=?", function(data) {
            var html = '';
            var counter = 0;
            $.each(data.recenttracks.track, function(i, item) {
