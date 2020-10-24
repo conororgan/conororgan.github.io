@@ -112,7 +112,6 @@ const color2luminance = luminance(padZero(r), padZero(g), padZero(b));
 const ratio = color1luminance > color2luminance
     ? ((color2luminance + 0.05) / (color1luminance + 0.05))
     : ((color1luminance + 0.05) / (color2luminance + 0.05));
-    console.log(ratio);
 
     if(ratio < 1/4.5) {
       // pad each with zeros and return
@@ -146,7 +145,6 @@ function padZero(str, len) {
      var item = document.getElementById("img-" + id);
     var color = getAverageRGB(item, "img-" + id);
     var inverted = invertColour(color);
-    console.log(inverted)
     var section = '#section-' + id;
     $(section).css("background", "rgb("+color.r+","+color.g+","+color.b+")");
     $('pre#artwork-' + id).css({ 'color': inverted });
