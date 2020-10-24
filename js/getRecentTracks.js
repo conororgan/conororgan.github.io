@@ -68,33 +68,37 @@ $(document).ready(function() {
         return defaultRGB;
     }
 
-    height = canvas.height = imgEl.naturalHeight || imgEl.offsetHeight || imgEl.height;
-    width = canvas.width = imgEl.naturalWidth || imgEl.offsetWidth || imgEl.width;
 
-    context.drawImage(imgEl, 0, 0);
+      height = canvas.height = imgEl.naturalHeight || imgEl.offsetHeight || imgEl.height;
+      width = canvas.width = imgEl.naturalWidth || imgEl.offsetWidth || imgEl.width;
 
-    try {
-        data = context.getImageData(0, 0, width, height);
-    } catch(e) {
-            console.log(e);
-            return defaultRGB;
-    }
+      context.drawImage(imgEl, 0, 0);
 
-    length = data.data.length;
+      try {
+          data = context.getImageData(0, 0, width, height);
+      } catch(e) {
+              console.log(e);
+              return defaultRGB;
+      }
 
-    while ( (i += blockSize * 4) < length ) {
-        ++count;
-        rgb.r += data.data[i];
-        rgb.g += data.data[i+1];
-        rgb.b += data.data[i+2];
-    }
+      length = data.data.length;
 
-    // ~~ used to floor values
-    rgb.r = ~~(rgb.r/count);
-    rgb.g = ~~(rgb.g/count);
-    rgb.b = ~~(rgb.b/count);
+      while ( (i += blockSize * 4) < length ) {
+          ++count;
+          rgb.r += data.data[i];
+          rgb.g += data.data[i+1];
+          rgb.b += data.data[i+2];
+      }
 
-    return rgb;
+      // ~~ used to floor values
+      rgb.r = ~~(rgb.r/count);
+      rgb.g = ~~(rgb.g/count);
+      rgb.b = ~~(rgb.b/count);
+
+      return rgb;
+
+
+
 
 }
 
@@ -143,12 +147,14 @@ function padZero(str, len) {
 
    function getColours(id) {
      var item = document.getElementById("img-" + id);
+             setTimeout(() => {
     var color = getAverageRGB(item, "img-" + id);
     var inverted = invertColour(color);
     var section = '#section-' + id;
+
     $(section).css("background", "rgb("+color.r+","+color.g+","+color.b+")");
     $('pre#artwork-' + id).css({ 'color': inverted });
     $(section + " p").css({ 'color': inverted });
     $('#artwork-' + id).css("background", "rgb("+color.r+","+color.g+","+color.b+")");
-
+  }, 10);
    }
